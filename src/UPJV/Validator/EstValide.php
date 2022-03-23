@@ -1,22 +1,24 @@
 <?php
 
 /**
- * Vérifie que
+ * Implementation de la contrainte vérifiant que le formulaire est valide
+ *
+ * @license GNU Public Licence V3
  */
 
 namespace UPJV\Validator;
 
 /**
- * Class EstValide implémente les méthode build & check
+ * EstValide retourne toujours vrai
  */
 class EstValide implements ValidatorInterface
 {
     /**
-     * Ceci est de la documentation pour la fonction build
+     * Ne fait rien
      *
      * @param array $param
      *
-     * @return bool
+     * @return object
      */
     public function build(array $param): object
     {
@@ -24,11 +26,11 @@ class EstValide implements ValidatorInterface
     }
 
     /**
-     * Ceci est de la documentation pour la fonction check
+     * Renvoie toujours true c'est pour la balise hidden contrainte
      *
-     * @param $input
+     * @param mixed $input
      *
-     * @return bool
+     * @return object
      */
     public function check($input): bool
     {
