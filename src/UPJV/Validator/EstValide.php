@@ -12,7 +12,11 @@ namespace UPJV\Validator;
 class EstValide implements ValidatorInterface
 {
     /**
-     * ceci est de la documentation pour la fonction build
+     * Ceci est de la documentation pour la fonction build
+     * 
+     * @param $input
+     * 
+     * @return bool
      */
     public function build(array $param): object
     {
@@ -20,7 +24,11 @@ class EstValide implements ValidatorInterface
     }
 
     /**
-     * ceci est de la documentation pour la fonction check
+     * Ceci est de la documentation pour la fonction check
+     * 
+     * @param $input
+     * 
+     * @return bool
      */
     public function check($input): bool
     {
