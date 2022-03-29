@@ -1,6 +1,15 @@
- * Class Avant implémente les méthode build & check
+<?php
+
+/**
+ * Vérifie que la date correspondent bien
  */
-class Avant implements ValidatorInterface
+
+namespace UPJV\Validator;
+
+/**
+ * Class AvantDate implémente les méthode build & check
+ */
+class AvantDate implements ValidatorInterface
 {
     protected int $size;
 
