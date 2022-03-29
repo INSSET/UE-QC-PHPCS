@@ -1,10 +1,10 @@
 {
-    "contrainte": {
-      "EstValide": []
-    },
-    "prenom": {
-      "Min": [
-        2
-      ]
-    }
+  "contrainte": {
+    "EstValide": []
+  },
+  "age": {
+    "SuperieurA": [
+      19
+    ]
   }
+}
