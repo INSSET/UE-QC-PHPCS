@@ -34,7 +34,7 @@ class Avant implements ValidatorInterface
      *
      * @return bool
      */
-    public function check($input): bool $d =explode('-',"01-08-2022");
+    public function check($input): bool 
     {
 		$d =explode('-',$input);
 		$t= mktime(0,0,0,$d[1].$d[1].$d[2])
