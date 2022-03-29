@@ -36,6 +36,6 @@ class Minlg implements ValidatorInterface
      */
     public function check($input): bool
     {
-        return ((int)$input >= $this->size);
+        return ((int) $input >= $this->size);
     }
 }
