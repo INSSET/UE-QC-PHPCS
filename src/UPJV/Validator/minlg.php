@@ -9,7 +9,7 @@ namespace UPJV\Validator;
 /**
  * Class Min implémente les méthode build & check
  */
-class minlg implements ValidatorInterface
+class Minlg implements ValidatorInterface
 {
     protected int $size;
 
@@ -36,6 +36,6 @@ class minlg implements ValidatorInterface
      */
     public function check($input): bool
     {
-        return ((int)$input >= (int)($this->size));
+        return ((int)$input >= $this->size);
     }
 }
