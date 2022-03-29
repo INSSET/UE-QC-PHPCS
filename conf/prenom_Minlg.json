@@ -1,0 +1,10 @@
+{
+  "contrainte": {
+    "EstValide": []
+  },
+  "nombre": {
+    "MinLong": [
+      100
+    ]
+  }
+}
