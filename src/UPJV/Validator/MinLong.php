@@ -9,7 +9,7 @@ namespace UPJV\Validator;
 /**
  * Class Min implémente les méthode build & check
  */
-class Minlg implements ValidatorInterface
+class MinLong implements ValidatorInterface
 {
     protected int $size;
 
