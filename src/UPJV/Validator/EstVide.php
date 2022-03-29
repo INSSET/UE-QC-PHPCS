@@ -36,6 +36,6 @@ class EstVide implements ValidatorInterface
      */
     public function check($input): bool
     {
-        return ($input == $this->chaineVide);
+        return ($input === $this->chaineVide);
     }
 }
