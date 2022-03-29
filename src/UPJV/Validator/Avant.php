@@ -7,9 +7,9 @@
 namespace UPJV\Validator;
 
 /**
- * Class AvantDate implémente les méthode build & check
+ * Class Avant implémente les méthode build & check
  */
-class AvantDate implements ValidatorInterface
+class Avant implements ValidatorInterface
 {
     protected int $size;
 
