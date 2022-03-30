@@ -7,9 +7,9 @@
 namespace UPJV\Validator;
 
 /**
- * Class EstVide retourne vrai si la chaîne est vide
+ * Class estVide retourne vrai si la chaîne est vide
  */
-class EstVide implements ValidatorInterface
+class estVide implements ValidatorInterface
 {
     protected string $chaineVide;
 
