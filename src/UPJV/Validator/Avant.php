@@ -36,8 +36,8 @@ class Avant implements ValidatorInterface
      */
     public function check($input): bool
     {
-	$d = explode('-', $input);
+	    $d = explode('-', $input);
 	
-	return (mktime(0, 0, 0, $d[1], $d[0], $d[2]) < $this->size);
+	    return (mktime(0, 0, 0, $d[1], $d[0], $d[2]) < $this->size);
     }
 }
