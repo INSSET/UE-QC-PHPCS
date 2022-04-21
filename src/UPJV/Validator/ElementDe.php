@@ -35,6 +35,6 @@ class ElementDe implements ValidatorInterface
      */
     public function check($input): bool
     {
-        return in_array($input,$this->tableau);
+        return in_array($input, $this->tableau);
     }
 }
