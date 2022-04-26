@@ -5,10 +5,10 @@ use UPJV\Validator\Min;
 
 require_once __DIR__ . '/../../src/UPJV/Validator/ValidatorEngine.php';
 require_once __DIR__ . '/../../src/UPJV/Validator/ValidatorInterface.php';
-require_once __DIR__ . '/../../src/UPJV/Validator/Min.php';
+require_once __DIR__ . '/../../src/UPJV/Validator/EgaleA.php';
 
 /**
- * @covers \UPJV\Validator\Min
+ * @covers \UPJV\Validator\EgaleA
  */
 class EgaleATest extends \PHPUnit\Framework\TestCase
 {
