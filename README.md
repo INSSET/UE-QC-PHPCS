@@ -23,3 +23,21 @@ Pour tester, publier le repertoire public avec un serveur web. Exemple avec
 le serveur interne à php
 
     php -S 0.0.0.0:8000 -t public
+
+Pour lancer les tests qui sont à mettre dans le repertoire test/units
+
+    php utils/phpunit.phar --bootstrap src/autoload.php test/units/
+
+Pour générer un rapport de couverture de test, l'extension xdebug doit être
+installée et configurée. La configuration peut se faire au lancement de php
+avec l'argument -d, voir exemple ci-dessous qui fonctionne avec le code du
+dépôt :
+
+     php -d  xdebug.mode=coverage utils/phpunit.phar --coverage-html test/html --bootstrap src/autoload.php test/units/
+
+### Exemple de lancement d'un container docker
+Construction de l'image puis lancement du container à partir de cette image 
+votre code est monté dans le répertoire /code du container
+
+    docker build -t php/phpcs .
+    docker run --rm -ti -v `pwd`:/code php/phpcs /bin/bash
