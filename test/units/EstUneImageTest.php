@@ -25,7 +25,7 @@ class EstUneImageTest extends \PHPUnit\Framework\TestCase
      */
     public function testCheckValide( object $obj ): void
     {
-        $this->assertEquals(true, $obj->check('image/png' || 'image/jpeg'));
+        $this->assertEquals(true, $obj->check('image/png' ));
     }
 
     /**
@@ -33,7 +33,7 @@ class EstUneImageTest extends \PHPUnit\Framework\TestCase
      */
     public function testCheckNotValide( object $obj ): void
     {
-        $this->assertEquals(false, $obj->check('text' || 'file'));
+        $this->assertEquals(false, $obj->check(!='image/png');
     }
 
 }
