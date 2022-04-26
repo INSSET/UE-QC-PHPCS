@@ -1,2 +1,5 @@
 /.idea/
 /utils/
+.phpunit.cache/
+vendor/
+test/html/
