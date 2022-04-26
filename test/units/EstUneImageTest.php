@@ -17,9 +17,14 @@ class EstUneImageTest extends \PHPUnit\Framework\TestCase
         $validateur = new EstUneImage();
         $obj = $validateur->build( [2]);
         $this->assertInstanceOf(\UPJV\Validator\ValidatorInterface::class , $obj);
+        if (isset $input)
+        {
+        $obj = true
+        }
+        else {
+        $obj=false
+        }
         return $obj;
-        $allowed =  array('jpeg','jpg', "png", "gif", "bmp", "JPEG","JPG", "PNG", "GIF", "BMP");
-        return $allowed;
     }
 
     /**
@@ -27,7 +32,7 @@ class EstUneImageTest extends \PHPUnit\Framework\TestCase
      */
     public function testCheckValide( object $obj ): void
     {
-        $this->assertEquals(true, $obj->check(in_array($allowed));
+        $this->assertEquals(true, $obj->check(true));
     }
 
     /**
@@ -35,7 +40,7 @@ class EstUneImageTest extends \PHPUnit\Framework\TestCase
      */
     public function testCheckNotValide( object $obj ): void
     {
-        $this->assertEquals(false, $obj->check(!in_array($allowed));
+        $this->assertEquals(false, $obj->check(false);
     }
 
 }
