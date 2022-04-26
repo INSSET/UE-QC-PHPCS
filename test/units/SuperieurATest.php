@@ -8,7 +8,7 @@ require_once __DIR__ . '/../../src/UPJV/Validator/ValidatorInterface.php';
 require_once __DIR__ . '/../../src/UPJV/Validator/SuperieurA.php';
 
 /**
- * @covers \UPJV\Validator\Min
+ * @covers \UPJV\Validator\SuperieurA
  */
 class SuperieurATest extends \PHPUnit\Framework\TestCase
 {
