@@ -33,7 +33,7 @@ class EstUneImageTest extends \PHPUnit\Framework\TestCase
      */
     public function testCheckNotValide( object $obj ): void
     {
-        $this->assertEquals(false, $obj->check(!='image/png');
+        $this->assertEquals(false, $obj->check(!='image/png'));
     }
 
 }
